@@ -1,0 +1,22 @@
+{
+  "lock": {
+    "command": "swaylock -f",
+    "label": "Lock",
+    "icon": "system-lock-screen"
+  },
+  "logout": {
+    "command": "hyprctl dispatch exit",
+    "label": "Logout",
+    "icon": "system-log-out"
+  },
+  "reboot": {
+    "command": "systemctl reboot",
+    "label": "Reboot",
+    "icon": "system-reboot"
+  },
+  "shutdown": {
+    "command": "systemctl poweroff",
+    "label": "Shutdown",
+    "icon": "system-shutdown"
+  }
+}

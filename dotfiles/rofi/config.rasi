@@ -1,0 +1,15 @@
+configuration{
+    modi: "drun";
+    icon-theme: "Papirus-Dark";
+    font: "JetBrains Mono Regular 13";
+    show-icons: true;
+    terminal: "wezterm";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    sidebar-mode: false;
+}
+
+@theme "~/.config/rofi/theme.rasi"

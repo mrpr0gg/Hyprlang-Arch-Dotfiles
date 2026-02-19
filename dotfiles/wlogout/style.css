@@ -1,0 +1,34 @@
+* {
+    all: unset;
+    font-family: JetBrainsMono Nerd Font;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+button {
+    background-color: rgba(20, 20, 20, 0.85);
+    border-radius: 18px;
+    padding: 25px;
+    margin: 12px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+button:hover label {
+    color: black;
+}
+
+image {
+    color: white;
+}
+
+label {
+    color: white;
+    font-size: 16px;
+    margin-top: 6px;
+}

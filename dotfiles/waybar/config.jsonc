@@ -1,0 +1,137 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+  "margin-top": 12,
+  "margin-left": 80,
+  "margin-right": 80,
+  "spacing": 10,
+
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "cpu",
+    "memory",
+    "backlight",
+    "pulseaudio",
+    "network",
+    "bluetooth",
+    "battery",
+    "custom/logout"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{id}"
+  },
+
+  "clock": {
+  	"format": "{:%H:%M:%S  -  %A, %d}",
+    "interval": 1,
+    "tooltip-format": "<span font='JetBrains Mono'>{calendar}</span>",
+    "calendar": {
+    	"mode": "year",
+    	"mode-mon-col": 3,
+    	"weeks-pos": "right",
+    	"on-scroll": 1,
+    	"format": {
+    		"months": "<span color='#ffead3'><b>{}</b></span>",
+    		"days": "<span color='#ecc6d9'><b>{}</b></span>",
+        	"weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        	"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        	"today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+    	}
+    }
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "format-alt": " {avg_frequency} GHz",
+    "interval": 1,
+    "tooltip": true,
+    "tooltip-format": "CPU Usage: {usage}%\nAverage Frequency: {avg_frequency} GHz\nLoad: {load}"
+  },
+       
+  "memory": {
+    "format": " {percentage}%",
+    "format-alt": " {used:0.1f}G/{total:0.1f}G",
+    "interval": 1,
+    "tooltip": true,
+    "tooltip-format": "Memory Usage: {percentage}%\nUsed: {used:0.2f} GB\nAvailable: {avail:0.2f} GB\nTotal: {total:0.2f} GB"
+  },
+  
+  "backlight": {
+    "format": "󰃟 {percent}%",
+    "scroll-step": 5
+  },
+
+  "pulseaudio": {
+    "format": "󰕾 {volume}%",
+    "format-muted": "󰖁 mute",
+    "scroll-step": 5
+  },
+
+  "network": {
+    "format-wifi": "󰖩 ",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": "󰖪 ",
+    "on-click": "nm-connection-editor"
+  },
+
+  "bluetooth": {
+    "format": "󰂯 ",
+    "format-disabled": "󰂲 ",
+    "format-off": "󰂲 ",
+    "format-on": "󰂯 ",
+    "format-connected": "󰂱 ",
+    "on-click": "blueman-manager"
+  },
+
+  "battery": {
+  	"format": "{icon}{capacity} ",
+  	"format-icons": {
+  		"charging": [
+     	 	"󰢜 ",
+    	 	"󰂆 ",
+   		 	"󰂇 ",
+   		 	"󰂈 ",
+         	"󰢝 ",
+         	"󰂉 ",
+         	"󰢞 ",
+         	"󰂊 ",
+         	"󰂋 ",
+         	"󰂅 "
+    	],
+   		"default": [
+         	"󰁺",
+         	"󰁻",
+         	"󰁼",
+         	"󰁽",
+         	"󰁾",
+         	"󰁿",
+         	"󰂀",
+         	"󰂁",
+         	"󰂂",
+         	"󰁹"
+   		]
+  	 },
+  	"format-full": "Charged ",
+    "interval": 5,
+    "states": {
+    	"warning": 20,
+    	"critical": 10
+     },
+  	"tooltip": false
+  },
+
+  "custom/logout": {
+  	"format": "󰤆 ",
+    "tooltip": false,
+    "on-click": "wlogout"
+  },
+}

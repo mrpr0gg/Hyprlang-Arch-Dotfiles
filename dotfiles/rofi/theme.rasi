@@ -1,0 +1,130 @@
+* {
+    background:            rgba(7, 10, 18, 0.60); 
+    background-alt:        rgba(15, 22, 36, 0.75);    
+    background-soft:       rgba(20, 28, 46, 0.50);  
+
+    foreground:            #cfd6ff;
+    foreground-muted:      #6f78a8;
+    
+    neon-purple:           #8a2bff;
+    neon-purple-bright:    #b14cff;
+    neon-purple-dark:      #5a00d4;
+
+    selected-bg:           rgba(26, 19, 48, 0.80);
+    urgent-bg:             rgba(42, 15, 37, 0.80);
+
+    text-white:            #ffffff;
+    text-black:            #06070d;
+
+    width:                 650;
+    border-radius:         18px;
+}
+
+window {
+    height:                390px;
+    background-color:      @background; 
+    border:                2px;
+    border-color:          transparent;
+    padding:               14px;
+    opacity:               1.0; 
+}
+
+mainbox {
+    background-color:      transparent;
+    spacing:               12px;
+}
+
+inputbar {
+    children:              [prompt, entry];
+    background-color:      @background-alt;
+    border-radius:         14px;
+    border:                2px;
+    border-color:          @neon-purple-dark;
+    padding:               10px;
+    margin:                6px 10px 0px 10px;
+}
+
+prompt {
+    background-color:      transparent;
+    text-color:            @neon-purple-bright;
+    padding:               6px 12px;
+    font:                  "JetBrainsMono Nerd Font 11";
+}
+
+textbox-prompt-colon {
+    expand:                false;
+    str:                   "  ❯";
+    text-color:            @neon-purple-bright;
+}
+
+entry {
+    background-color:      transparent;
+    text-color:            @text-white;
+    margin:                0px 0px 0px 8px;
+    placeholder:           "Search...";
+    placeholder-color:     @foreground-muted;
+}
+
+listview {
+    columns:               2;
+    lines:                 6;
+    spacing:               8px;
+    margin:                0px 10px 0px 10px;
+    background-color:      transparent;
+    scrollbar:             true;
+}
+
+element {
+    background-color:      @background-soft;
+    border-radius:         16px;
+    border:                2px;
+    border-color:          #00000000;
+    padding:               12px;
+    text-color:            @foreground;
+}
+
+element-text, element-icon {
+    background-color:      inherit;
+    text-color:            inherit;
+}
+
+element-icon {
+    size:                  24px;
+    margin:                0px 10px 0px 0px;
+}
+
+element selected {
+    background-color:      @selected-bg;
+    border-color:          @neon-purple-bright;
+    text-color:            @text-white;
+}
+
+element urgent {
+    background-color:      @urgent-bg;
+    border-color:          @neon-purple;
+    text-color:            @text-white;
+}
+
+mode-switcher {
+    spacing:               8px;
+    margin:                0px 10px 6px 10px;
+}
+
+
+button selected {
+    background-color:      @selected-bg;
+    border-color:          @neon-purple-bright;
+    text-color:            @neon-purple-bright;
+}
+
+textbox {
+    background-color:      @background-alt;
+    border-radius:         14px;
+    border:                2px;
+    border-color:          @neon-purple;
+    padding:               10px;
+    margin:                0px 10px;
+    text-color:            @foreground;
+}     
+
+

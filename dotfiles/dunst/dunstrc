@@ -1,0 +1,48 @@
+[global]
+
+### Position ###
+origin = top-right
+offset = 20x40
+
+### Geometry ###
+width = 320
+height = 120
+corner_radius = 16
+padding = 16
+horizontal_padding = 16
+frame_width = 3
+separator_height = 2
+
+### Fonts ###
+font = JetBrainsMono Nerd Font 10
+
+### Behavior ###
+idle_threshold = 120
+show_age_threshold = 60
+markup = full
+format = "<b>%s</b>\n%b"
+
+### Transparency ###
+transparency = 0
+
+### Colors ###
+background = "#0b1020"
+foreground = "#cfd6ff"
+frame_color = "#8a2bff"
+separator_color = "#8a2bff"
+
+### Icon ###
+icon_position = left
+max_icon_size = 48
+
+### Progress bar ###
+progress_bar = true
+progress_bar_height = 6
+progress_bar_frame_width = 2
+progress_bar_min_width = 150
+progress_bar_max_width = 300
+progress_bar_corner_radius = 8
+progress_bar_frame_color = "#8a2bff"
+progress_bar_background = "#141c2e"
+progress_bar_foreground = "#b14cff"
+
