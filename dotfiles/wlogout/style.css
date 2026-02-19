@@ -9,26 +9,30 @@ window {
 
 button {
     background-color: rgba(20, 20, 20, 0.85);
+    border: 2px solid #00ffff;
     border-radius: 18px;
     padding: 25px;
     margin: 12px;
     transition: all 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(0, 255, 255, 0.15);
+    border-color: #ff00ff;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
 }
 
 button:hover label {
-    color: black;
+    color: #ff00ff;
 }
 
 image {
-    color: white;
+    color: #00ffff;
 }
 
 label {
-    color: white;
+    color: #00ffff;
     font-size: 16px;
     margin-top: 6px;
 }
